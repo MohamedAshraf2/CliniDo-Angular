@@ -1,0 +1,57 @@
+<div class="container-fluid py-3" id="secOne">
+  <div class="row p-5 d-flex justify-content-between">
+    <div class="col-lg-3 col-md-3 col-sm-12">
+      <div class="card mb-2 doctor shadow p-3" style="border-radius: 1em;" >
+        <img class="card-img-top w-25 py-1" src="{{doctor.url}}"
+            alt="image cap">
+        <div>
+            <h5 class="card-title">{{doctor.firstName}}</h5>
+            <p class="mb-1">{{doctor.drCategory}}</p>
+            <p class="text-muted">{{doctor.firstName}}</p>
+            <span class="text-muted">Saturday | 23 Oct 2021 (5:00 PM - 8:00 PM)</span>
+
+        </div>
+    </div>
+    </div>
+    <div class="col-lg-7 col-md-7 col-sm-12 secDiv">
+      <h1>{{'Complete your appointment'|translate}}</h1>
+      <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="name">{{'Name'|translate}}</label>
+          <input type="text" class="form-control" name="name" placeholder="{{'Type Your Name'|translate}}" formControlName="name">
+        </div>
+        <div class="form-group">
+          <label for="phone">{{'Phone number'|translate}}</label>
+          <input type="text" class="form-control" name="phone"  placeholder="{{'Phone number'|translate}}" formControlName="phone">
+        </div>
+        <div class="form-group">
+          <label for="email">{{'Email address'|translate}}</label>
+          <input type="email" class="form-control" name="email" placeholder="{{'Type your Email address here..'|translate}}" formControlName="email">
+        </div>
+        <div style="width: 100%;" class="d-flex justify-content-between">
+          <button type="submit" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal" [disabled]="bookingForm.invalid">{{'Book'|translate}}</button>
+          <button type="button" class="btn btn-secondary btn-lg bg-white text-dark">{{'Cancel'|translate}}</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+ </div>
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Thank You Doctor, please download CliniDo Dr. App. and we will contact you very soon.</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div> -->
+      <div class="modal-body text-center" id="model">
+        <img src="../../../../assets/images/ic-successfully-booked.svg" class="py-2">
+        <h5>{{'Your Booking is confirmed'|translate}}</h5>
+        <span>{{doctor.firstName}}</span>
+      </div>
+      <div class="modal-footer" id="modelfooter">
+        <button type="button" class="btn btn-lg btn-primary"  data-bs-dismiss="modal" (click)="onDetails()">{{'Your booking details'|translate}}</button>
+      </div>
+    </div>
+  </div>
+</div>

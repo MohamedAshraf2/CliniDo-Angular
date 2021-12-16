@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "clinido-ce15d": {
+      "hosting": {
+        "CliniDo": [
+          "clinido-ce15d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "clinido-ce15d"
+  }
+}

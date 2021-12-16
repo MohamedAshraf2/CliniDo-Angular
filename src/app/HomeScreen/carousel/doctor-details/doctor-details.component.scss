@@ -1,0 +1,623 @@
+$paddingMargin: 15px;
+
+// * {
+//     padding: 0;
+//     margin: 0;
+//     outline: none;
+//     box-sizing: border-box;
+
+// }
+// html[dir="rtl"] {
+//   #clinic-info {
+//     margin-right: 470px;
+//   }
+// }
+
+html {
+  font-family: "Helvetica ", Arial, sans-serif;
+  font-size: 15px;
+}
+
+#drProfileHeader {
+  background-color: #fff;
+
+  .bookContainer {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .online {
+      margin-right: 15px;
+      margin-left: 15px;
+      padding-top: 66px;
+
+      .card {
+        padding-left: 0;
+        padding-right: 0;
+        border: none;
+        .prof-img {
+          width: 76px;
+          height: 76px;
+          border-radius: 38px;
+          border: solid 2.2px #026d95;
+          float: left;
+        }
+
+        .share_link {
+          display: block;
+          margin-left: 519px;
+          .share-img {
+            float: right;
+            transform: rotate(180deg);
+            margin-top: 2%;
+          }
+        }
+
+        .doc-nmsp {
+          h1 {
+            height: 20px;
+            font-size: 16px;
+            color: #38b9db;
+            font-family: FFShamelFamily-SansOneBold;
+            font-weight: bold;
+            margin-top: 20px;
+          }
+
+          .title {
+            height: 20px;
+            font-family: FFShamelFamily-SansOneBold;
+            font-size: 15px;
+          }
+        }
+
+        .rate-box {
+          padding: 3%;
+          display: flex;
+          text-align: center;
+          width: 100%;
+          margin-top: -24px;
+          .ngma {
+            p {
+              display: inline;
+              font-size: 12px;
+              color: #888888;
+              margin-left: 10px;
+            }
+          }
+        }
+
+        .clinics {
+          // display: inline-block;
+          color: #004f6c;
+          font-size: 20px;
+          font-weight: bold;
+          margin-top: -26px;
+        }
+      }
+    }
+  }
+}
+
+#drProfile {
+  background-color: #efeff4;
+
+  .bookContainer {
+    padding-right: 30px;
+    padding-left: 30px;
+
+    .drDetails {
+      // margin-right: -15px;
+      // margin-left: -15px;
+      justify-content: space-around;
+
+      .mobileCard {
+        // width: 100%;
+        .card {
+          box-shadow: 0 4px 8px 0 #00000033;
+          text-align: center;
+          background-color: #fff;
+          border-radius: 12px;
+          margin-bottom: 20px;
+          padding-right: 0px;
+          padding-left: 0px;
+          font-size: 14px;
+        }
+
+        .clinic-name {
+          h4 {
+            text-align: left;
+            font-family: FFShamelFamily-SansOneBold;
+            font-weight: bold;
+            font-size: 16px;
+            color: #38b9db;
+            margin-top: 10px;
+            margin-bottom: 0;
+          }
+        }
+
+        .loc-box {
+          height: auto;
+          text-align: left;
+
+          .text-loc {
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 5px;
+            text-align: left;
+            display: inline;
+          }
+
+          .clin-loc {
+            display: inline;
+          }
+        }
+
+        .img-circle {
+          width: 76px;
+          height: 76px;
+          border-radius: 38px;
+          border: solid 2px #026d95;
+          float: left;
+        }
+
+        .doc-nmsp {
+          h1 {
+            font-family: FFShamelFamily-SansOneBold;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: left;
+            color: #38b9db;
+            height: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+          }
+
+          p {
+            height: 20px;
+            text-align: left;
+            color: #000;
+          }
+        }
+
+        .rate-box {
+          padding: 3%;
+          background-color: #fbfbfb;
+          text-align: center;
+          display: flex;
+
+          p {
+            display: inline;
+          }
+        }
+
+        .doc-cd {
+          padding: 0px 12px;
+        }
+
+        .details {
+          .mini_images {
+            width: 40px;
+            height: 40px;
+          }
+
+          .text {
+            font-size: 10px;
+            color: #888888;
+            margin: 0 0 10px;
+          }
+
+          .value {
+            height: 25px;
+            font-size: 10px;
+            color: #000;
+
+            a {
+              text-decoration: none;
+              color: #000;
+            }
+          }
+        }
+
+        .global-nav {
+          p {
+            text-align: left;
+            margin: 0 0 10px;
+            font-size: 12.5px;
+            color: #888888;
+          }
+
+          .btn-nav {
+            width: 100%;
+            height: 42px;
+            border-radius: 4px;
+            background-color: #30c34b;
+            font-weight: bold;
+            color: #fff;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+
+        .other-dates {
+          margin: 10px;
+          padding-bottom: 0px;
+
+          // margin-bottom: -25px;
+          p {
+            padding: 10px 0px 0px 5px;
+            display: inline;
+            cursor: pointer;
+          }
+
+          #drop-img {
+            display: inline;
+            color: #d4d7d8;
+            margin-top: 5px;
+            margin-left: 8px;
+          }
+        }
+      }
+
+      .tabs-links {
+        width: 100%;
+        // height: 30%;
+        cursor: pointer;
+        z-index: 1;
+
+        .nav-tabs {
+          border-bottom: none;
+
+          li {
+            padding-right: 13px;
+          }
+
+          li.active a {
+            border: none;
+            border-bottom: 2px solid #38b9db;
+            font-weight: bold;
+            color: #38b9db;
+            cursor: pointer;
+          }
+        }
+      }
+
+      #clinic-info {
+        // margin-top: 10px;
+        margin-bottom: 40px;
+        width: 100%;
+        margin-left: auto;
+
+        .centerInfoIcon {
+          color: #38b9db;
+          margin: 0 3px;
+          display: inline-block;
+        }
+
+        .center_info {
+          display: inline;
+          font-size: 14px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        .abt-cnt p {
+          display: inline;
+        }
+
+        .abt-cnt div:last-of-type {
+          margin-top: 18px;
+        }
+      }
+
+      #ratingReviews {
+        // margin-top: 10px;
+        margin-bottom: 40px;
+        width: 100%;
+        margin-left: auto;
+
+        .abt-cnt {
+          .general-rate {
+            margin-bottom: 4px;
+            font-size: 14px;
+          }
+        }
+
+        .general-rating {
+          display: inline;
+          margin-right: 15px;
+
+          .checked {
+            color: #ffcc00;
+          }
+
+          .not-checked {
+            color: #dddde1;
+          }
+        }
+
+        .rate-count {
+          font-size: 12px;
+        }
+
+        p {
+          display: inline;
+          text-align: right;
+          color: #888888;
+        }
+
+        .title {
+          color: #000;
+          font-size: 14px;
+        }
+
+        .value {
+          float: right;
+          // display: inline-block;
+          font-size: 12px;
+        }
+
+        .progress {
+          height: 4px;
+          clear: both;
+          margin-bottom: 20px;
+          border-radius: 4px;
+          box-shadow: inset 0 1px 2px #00000033;
+        }
+
+        .progress-bar {
+          background-color: #ffcc00;
+        }
+      }
+
+      .prf-abt {
+        background-color: #fff;
+        border-radius: 8px;
+        margin: 10px 0;
+        padding: 25px;
+
+        h4 {
+          font-weight: bold;
+          color: #0e0e0e;
+          font-size: 18px;
+        }
+      }
+
+      .rating {
+        .checked {
+          color: #ffcc00;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  #drProfileHeader {
+    height: 541px;
+
+    .card {
+      width: 100% !important;
+    }
+  }
+
+  #drProfile {
+    .mobileCard {
+      width: 100%;
+    }
+
+    .card {
+      margin-top: -337px;
+      // margin-bottom: 78px !important;
+    }
+
+    .tabs-links {
+      margin-top: -45px;
+
+      .nav-tabs li a {
+        padding-bottom: 20px;
+      }
+    }
+
+    #clinic-info {
+      margin-top: 10px;
+    }
+
+    #ratingReviews {
+      margin-top: 10px;
+
+      h4 {
+        width: 105%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #drProfileHeader {
+    height: 212px;
+
+    .share-img {
+      display: none;
+    }
+
+    .bookContainer {
+      padding-right: 0px;
+      padding-left: 20px;
+      width: auto;
+
+      .online {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: 0px;
+        margin-right: 50px;
+      }
+
+      .rate-box {
+        width: 50% !important;
+
+        div {
+          width: 25%;
+        }
+      }
+    }
+  }
+
+  #drProfile {
+    .mobileCard {
+      width: 33.33333333%;
+    }
+
+    .card {
+      // margin-top: 20px;
+      margin-left: 0px;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .tabs-links {
+      width: 61.67777% !important;
+      margin-top: -47px;
+
+      .container-fluid {
+        padding-left: 30px;
+
+        .nav-tabs li {
+          padding-right: 40px !important;
+
+          a {
+            padding-bottom: 27px;
+          }
+        }
+      }
+    }
+
+    #clinic-info {
+      width: 60.67777% !important;
+      margin-top: -318px;
+    }
+
+    #ratingReviews {
+      width: 60.67777% !important;
+      margin-top: -318px;
+
+      .general-rating {
+        font-size: 13px;
+      }
+
+      .rate-count {
+        width: 150%;
+        display: inline-block !important;
+      }
+    }
+  }
+}
+
+// @media (min-width: 819px) {
+//   #clinic-info {
+//     margin-top: -378;
+//   }
+
+//   #ratingReviews {
+//     margin-top: -378px;
+//   }
+// }
+
+@media (min-width: 992px) {
+  #drProfileHeader {
+    // height: 160px;
+    .bookContainer {
+      margin-right: 87px;
+      margin-left: 66px;
+    }
+    .doctorName {
+      margin-left: 25px;
+    }
+  }
+
+  #drProfile {
+    .mobileCard {
+      width: 25%;
+    }
+    .tabs {
+      margin-left: 24px;
+    }
+
+    // #clinic-info {
+    //   margin-top: -375px;
+    //   margin-right: 36px;
+    // }
+
+    // #ratingReviews {
+    //   margin-top: -375px;
+    //   margin-right: 36px;
+    // }
+  }
+}
+
+@media (min-width: 1024px) {
+  #drProfileHeader {
+    height: 230px;
+  }
+}
+@media (min-width: 1200px) {
+  #drProfileHeader {
+    height: 241px;
+  }
+}
+
+@media (min-width: 1336px) {
+  #drProfileHeader {
+    height: 237px;
+  }
+  #clinic-info {
+    margin-top: -302px !important;
+  }
+
+  #ratingReviews {
+    margin-top: -302px !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  #drProfileHeader {
+    height: 244px;
+  }
+  .tabs {
+    margin-left: 47px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  #drProfileHeader {
+    .bookContainer .online .card .clinics {
+      margin-top: -22px;
+    }
+  }
+}
+
+@media (min-width: 2560px) {
+  .tabs {
+    margin-left: 86px !important;
+  }
+  #drProfileHeader {
+    height: 298px;
+
+    .bookContainer .online .card .clinics {
+      margin-top: -22px;
+    }
+  }
+
+  #drProfile .card {
+    margin-top: 30px;
+  }
+
+  // #clinic-info {
+  //   margin-top: -353px !important;
+  // }
+
+  // #ratingReviews {
+  //   margin-top: -353px !important;
+  // }
+}

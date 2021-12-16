@@ -1,0 +1,63 @@
+<!-- <div class="col-md-4"> -->
+<div class="card mb-2">
+  <img
+    class="card-img-top"
+    src="{{doctor.url}}"
+    routerLink="../doctorDetails/{{doctor.id}}"
+    alt="Card image cap"
+  />
+  <div>
+    <h4
+      class="card-title ps-3"
+      routerLink="doctorDetails/{{doctor.id}}"
+    >
+      {{ doctor.firstName }}
+    </h4>
+    <p class="mb-1 ps-3">{{ doctor.drCategory }}</p>
+    <p
+      class="text-muted ps-3"
+      routerLink="doctorDetails/{{doctor.id}}"
+    >
+      {{ doctor.mobile }}
+    </p>
+
+    <div class="d-flex">
+      <div class="col-md-6 icon">
+        <i class="fa fa-star text-warning" aria-hidden="true"></i><span>5</span>
+      </div>
+      <div class="col-md-6 icon">
+        <i class="fa fa-eye" aria-hidden="true"></i><span>5442</span>
+      </div>
+    </div>
+    <h6 class="ps-3 pt-1">{{ doctor.firstName }} {{ doctor.lastName }}</h6>
+    <p class="ps-3">{{ doctor.drCity }}</p>
+    <div class="d-flex">
+      <div class="col-md-4 d-flex flex-column">
+        <i class="fas fa-history fees"></i>
+        <span class="text-muted">{{'Waiting'|translate}}</span>
+        <span class="desc">{{doctor.time}} {{'minute'|translate}}</span>
+      </div>
+      <div class="col-md-4 d-flex flex-column">
+        <i class="fas fa-dollar-sign fees"></i>
+        <span class="text-muted">{{'Fees'|translate}}</span>
+        <span class="desc">{{doctor.fees}} {{'EGP'|translate}}</span>
+      </div>
+      <div class="col-md-4 d-flex flex-column">
+        <i class="fas fa-phone-alt fees"></i>
+        <span class="text-muted">{{'Call us'|translate}}</span>
+        <span class="desc">{{doctor.mobile}}</span>
+      </div>
+    </div>
+    <p class="ps-3 pt-1 text-muted">{{ doctor.drArea }}</p>
+    <button
+      class="btn text-white text-center"
+      routerLink="../booking/{{ doctor.id }}"
+    >
+      {{'Book 14/102021 (5:00 PM - 8:00 PM)'|translate}}
+    </button>
+    <p class="mt-1 text-center">
+      {{'Show other available dates'|translate}} <i class="fas fa-sort-down"></i>
+    </p>
+  </div>
+</div>
+<!-- </div> -->

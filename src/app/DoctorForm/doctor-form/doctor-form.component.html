@@ -1,0 +1,112 @@
+
+  <!-- this.doctors = actions.payload.doc.data() as Doctor;
+  this.doctors.id = actions.payload.doc.id;
+  console.log(this.doctors);
+  this.allDoctors.push(this.doctors) -->
+<section id="areYouDoctor">
+  <div class="container-fluid content">
+    <div class="title">
+      <h1>{{'Are you a Doctor?'|translate}}</h1>
+    </div>
+    <div class="areYouDoctorForm">
+      <div class="container-fluid">
+        <div class="sign">
+          <form class="global" id="xyz" novalidate="novalidate" (ngSubmit)="onSubmit(form)" #form="ngForm">
+            <input type="hidden" name="_token" value="" />
+            <div class="row formRow">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 formCol">
+                <div class="form-group">
+                  <label for="firstName">{{'First name'|translate}}</label>
+                  <input id="firstName" class="form-control input-lg formInputs" type="text" name="firstName"
+                    placeholder="{{'Type Your First Name Here...'|translate}}" autocomplete="off" ngModel required />
+                  <span id="firstname1" style="color: #ff0000"></span>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 formCol">
+                <div class="form-group">
+                  <label for="lastName">{{'Last name'|translate}}</label>
+                  <input id="lastName" class="form-control input-lg formInputs" type="text" name="lastName"
+                    placeholder="{{'Type Your Last Name Here...'|translate}}" autocomplete="off" ngModel />
+                  <span id="lastname1" style="color: #ff0000"></span>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 formCol">
+                <div class="form-group">
+                  <label for="phone">{{'Phone number'|translate}}</label>
+                  <input id="countryCode" class="form-control input-lg center formInputs" type="hidden"
+                    name="countryCode" value="20" />
+                  <div class="iti iti--allow-dropdown">
+                    <input class="form-control input-lg center formInputs" id="mobile" type="tel" name="mobile"
+                      maxlength="17" autocomplete="off" data-intl-tel-input-id="0" value placeholder=" " ngModel />
+                  </div>
+                  <span class="text-danger text-center show-msg" id="mobile1" style="color: #ff0000"></span>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 formCol">
+                <div class="form-group">
+                  <label for="speciality">{{'Choose a speciality'|translate}}</label>
+                  <select class="input-field input-lg formInputs" id="mySelect" name="drCategory" ngModel>
+                    <option name="drCity">{{'Choose Category'|translate}}</option>
+                    <option *ngFor="let cat of DoctorCategory" [value]="cat.name">
+                      {{ cat.name }}
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 formCol">
+                <div class="form-group">
+                  <label for="city">{{'Choose City'|translate}}</label>
+                  <select class="input-field input-lg valid formInputs" id="selectCity" name="drCity" (change)="onSelect(selectedCity.id)" [(ngModel)]="selectedCity.id">
+                    <option name="drCity" >{{'Choose City'|translate}}</option>
+                    <option *ngFor="let city of cities" [value]="city.id">
+                      {{ city.name }}
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 formCol">
+                <div class="form-group">
+                  <label for="area">{{'Choose Area'|translate}}</label>
+                  <select id="selectArea" name="drArea" class="input-field input-lg formInputs">
+                    <option value="0" id="drArea" name="drArea" selected >
+                      {{'Choose Area'|translate}}
+                    </option>
+                    <option  id="drArea" name="drArea"   [value]="area.id" *ngFor="let area of areas">
+                      {{area.name}}
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 formCol">
+                <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-nav fnt-25 btn-success"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  {{'Send'|translate}}
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <!-- <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Thank You Doctor, please download CliniDo Dr. App. and we will contact you very soon.</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div> -->
+                      <div class="modal-body" id="model">
+                        <h5>{{'Thank You Doctor, please download CliniDo Dr. App. and we will contact you very soon.'|translate}}</h5>
+                        <div class="go-app">
+                          <a href="#"><img src="../../../assets/images/btn-google-play-dark-2-mobile.svg" alt=""></a>
+                          <a href="#"><img src="../../../assets/images/btn-apple-store-dark-mobile.svg" alt=""></a>
+                        </div>
+                      </div>
+                      <div class="modal-footer" id="modelfooter">
+                        <button type="button" class="btn btn-lg btn-success" data-bs-dismiss="modal">{{'Ok'|translate}}</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

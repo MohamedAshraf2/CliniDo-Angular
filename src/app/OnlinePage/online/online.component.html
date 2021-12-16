@@ -1,0 +1,221 @@
+<div class="container-fluid " style="padding-top: 8%; background-color: rgb(255, 255, 255);">
+  <div class="row c1">
+      <div id="hh" class="col-lg-7 col-md-7 col-sm-12 col-xm-12">
+          <h2 id="one">
+              <span>{{'Online Consultation'|translate}}</span>
+          </h2>
+          <div class="why-img ">
+
+              <div class="col-lg-10 col-md-10 col-sm-11 col-xs-10">
+                  <h4 class="why-h4">{{'Have a remote consultation with the best doctors through the audiovisual consultation service.'|translate}}</h4>
+              </div>
+          </div>
+      </div>
+      <div id="img-cont" class="col-lg-4 col-md-4">
+          <div class="center">
+              <div class="doctor">
+                  <img src="https://clinido.com/public/images/online-consult.png" class="img-responsive imb">
+              </div>
+          </div>
+      </div>
+  </div>
+  <div id="fitcher" class="row">
+    <h6 >{{'See a doctor online'|translate}}</h6>
+  </div>
+</div>
+
+<div class="container-fluid x">
+<div class="row" >
+  <div class=" col-md-5 col-sm-12 col-xs-12  " >
+    <select class="form-select form-select-lg mb-3 " id="mySelect"  style="background-color:#efeff4 ;" [(ngModel)]="filterItem" #inputval>
+      <option name="drCity">{{'Choose Category'|translate}}</option>
+      <option *ngFor="let cat of DoctorCategory" [value]="cat.name" >
+        {{ cat.name }}
+      </option>
+    </select>
+
+  </div>
+</div>
+
+<div class=" col-md-4 col-sm-11 col-xs-10 " style="padding-left:7%;">
+  <button type="button" style="background-color: #30c34a; color: white; "
+      class="btn w-100 h-100 fs-4 fw-bold "
+
+
+      [routerLink]="['../search']" [queryParams]="{ value: inputval.value }"
+
+      >Search</button>
+</div>
+
+</div>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<app-carousel >
+
+</app-carousel>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+<section id="freqaskedquestions">
+  <div class="container-fluid" >
+      <div class="row">
+
+          <img class="col-lg-2 col-md-2 col-sm-0 col-xs-0 imo" src="https://clinido.com/public/images/img-tips.svg">
+
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 repeated-questions shadow-lg">
+          <h2 class="faq">{{'FAQs'|translate}}</h2>
+          <div class="ques">
+                  <div  id="accordion">
+                    <ul style="list-style-type: none;">
+                      <li>
+                      <button type="button" class="btn  but" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        <h6>{{'How to see a doctor while staying at home?'|translate}}  </h6>                    </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel1">{{'How to see a doctor while staying at home?'|translate}}
+                              </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                              {{'In light of COVID-19 outbreak and the importance of social distancing these days, CliniDo introduces telemedicine services either through audio/visual meeting with doctors or fast consultation service through SMS or phone call.'|translate}}
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{'Close'|translate}}</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </li>
+                      <li>
+                      <button type="button" class="btn  but" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <h6>{{'When should I choose to see doctor online?'|translate}}</h6></button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel2">{{'When should I choose to see doctor online?'|translate}}
+                              </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                              {{'If you are suffering from specific medical problem and need to see a doctor while staying at home so you can choose to see doctor online by choosing specialty, comparing and selecting the most suitable doctor in terms of title, fees, and appointment time, then you will be able to have an audiovisual meeting with this doctor.'|translate}}
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{'Close'|translate}}</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <button type="button" class="btn  but" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <h6>{{'How to book an online consultation?'|translate}} </h6>                   </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel3">{{'How to book an online consultation?'|translate}}
+                              </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <ul>
+                                <li> {{'Choose the needed specialty'|translate}}</li>
+                                <li> {{'Choose the suitable doctor and select the suitable time.'|translate}}</li>
+                                <li> {{'Write your personal data (Name, mobile no. and e-mail).'|translate}}</li>
+                                <li> {{'Choose the suitable payment method then click book.'|translate}}</li>
+                            </ul>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{'Close'|translate}}</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <button type="button" class="btn  but" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                       <h6> {{'How to pay for the consultation?'|translate}}       </h6>               </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel4">{{'How to pay for the consultation?'|translate}}
+                              </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+
+                              {{'Choose the most convenient method of payment (Card, Fawry, Aman or Massary).'|translate}}
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{'Close'|translate}}</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <button type="button" class="btn  but" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                        <h6>{{'How do the online consultation take place? '|translate}} </h6>             </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel5">{{'How do the online consultation take place?'|translate}}
+                              </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <ul>
+                                <li> {{'A link for the consultation will be sent to you after booking'|translate}}</li>
+                                <li> {{'If you will have the consultation through laptop click the consultation link directly.'|translate}}</li>
+                                <li> {{'If you will have the consultation through your mobile, you will need to download CliniDo app then click the consultation link.'|translate}}</li>
+                                <li> {{'The consultation link will be activated only in the date and time you have booked.'|translate}}</li>
+                            </ul>
+                          </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{'Close'|translate}}</button>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </li>
+
+                    </ul>
+
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+

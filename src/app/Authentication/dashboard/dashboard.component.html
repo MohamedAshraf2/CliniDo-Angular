@@ -1,0 +1,62 @@
+<!-- Top navigation --><div style="margin-top: 10%; margin-bottom: 10%;">
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow" style="margin-top: 50%;">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0">
+    <img class="brand-logo" src="assets/logo-positronx-white.svg" alt="positronX.io Logo">
+  </a>
+</nav>
+
+<!-- Sidebar navigation -->
+<div class="container-fluid" style="text-align: center;">
+  <div class="d-flex" style="flex-direction: row; justify-content: center;">
+  <div class="row" style="flex-direction: column;justify-content: center;" >
+
+    <!-- Main content -->
+    <main role="main" class=" px-4">
+      <div class="inner-adjust">
+
+        <div class="pt-3 pb-2 mb-3 border-bottom" *ngIf="authService.userData as user">
+          <h1 class="h2" style="color: #004f71;">{{'User Profile'|translate}}</h1>
+        </div>
+        <!-- Show user data when logged in -->
+        <div class="row" *ngIf="authService.userData as user">
+          <div class="col-md-12">
+            <div class="media">
+
+              <div class="media-body">
+                <!-- <h1>Hello: <strong>{{(user.displayName) ? user.displayName : 'User'}}</strong></h1> -->
+                <p>User ID: <strong>{{user.uid}}</strong></p>
+                <p>Email: <strong>{{user.email}}</strong></p>
+                <p>Email Verified: <strong>{{user.emailVerified}}</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <nav class="sidebar" style="width: 50%; margin-left: auto; margin-right: auto;">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <!-- <li class="nav-item">
+            <a class="nav-link active btn btn-lg btn-block"  style="background-color: #38b9db;color:white;" type="button">
+              <i class="fas fa-user"></i>{{' User Profile'|translate}}
+            </a>
+          </li> -->
+          <!-- Calling SignOut() Api from AuthService -->
+          <li class="nav-item">
+            <a  class="nav-link active btn btn-lg btn-block"  style="background-color: #38b9db; border-radius: 8%;color:white; margin-top: 20px;" type="button" (click)="authService.SignOut()">
+              <i class="fas fa-sign-out-alt"> </i>{{ 'Log out'|translate}}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="col-md-5 px-0 d-none d-md-block">
+    <img src="https://clinido.com/public/images/img-1.svg" alt="Login image" class="w-75"
+      style="object-fit: cover; object-position: left; margin-top:10%;">
+  </div>
+</div>
+</div>
+</div>

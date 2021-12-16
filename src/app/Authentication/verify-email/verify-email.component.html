@@ -1,0 +1,33 @@
+<div style="display: flex;justify-content: center;text-align: center;">
+<div class="displayTable" style="margin-top: 10%; padding-bottom: 30px;">
+  <div class="displayTableCell">
+
+    <div class="authBlock">
+      <h3 style="color:#004f71">{{'Thank You for Registering'|translate}}</h3>
+
+      <div class="formGroup" *ngIf="authService.userData as user">
+        <p class="text-center">{{'We have sent a confirmation email to'|translate}} <strong>{{user.email}}</strong>.</p>
+        <p  class="text-center">{{'Please check your email and click on the link to verfiy your email address'|translate}}.</p>
+      </div>
+
+      <!-- Calling SendVerificationMail() method using authService Api -->
+      <div class="formGroup">
+        <button type="button" class="btn btnPrimary" (click)="authService.SendVerificationMail()" style="background-color: #004f71; color:#fff; margin-bottom: 15px;">
+          <i class="fas fa-redo-alt"></i>
+          {{'Resend Verification Email'|translate}}
+        </button>
+      </div>
+
+    </div>
+
+    <div class="redirectToLogin">
+      <span>{{'Go back to'|translate}} <Button class="redirect btn " style="background-color: #004f71; color:#fff;"  routerLink="/login"> {{'Sign in'|translate}} </Button> ?</span>
+    </div>
+
+  </div>
+</div>
+<div class="col-md-5 px-0 d-none d-md-block">
+  <img src="https://clinido.com/public/images/img-tips.svg" alt="Login image" class="w-75"
+    style=" object-position: left; margin-top:10%;height: 500px;">
+</div>
+</div>

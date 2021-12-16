@@ -1,0 +1,25 @@
+$breakpoint-tablet: 991px;
+$breakpoint2-tablet: 767px;
+$button-Width: 100px;
+$logoColor: #004f71;
+$callUsColor: #38b9db;
+$margTop: 8%;
+
+#cont1 {
+  padding-top: $margTop;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  #cont1 {
+    padding-top: 20%;
+  }
+}
+
+@media (max-width: 400px) {
+  #cont1 {
+    padding-top: 40%;
+  }
+}
+#row1 {
+  justify-content: space-evenly;
+}

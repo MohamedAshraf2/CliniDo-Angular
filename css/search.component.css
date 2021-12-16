@@ -1,0 +1,153 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.search_box {
+  padding-top: 100px;
+  width: 100%;
+  background: #004f71;
+  transition: top 1.3s;
+}
+
+.form-select {
+  height: 60px;
+}
+
+.doctor-name {
+  border-radius: 8px;
+  padding-left: 2%;
+  background-color: #efeff4;
+  border: none;
+  width: 80%;
+  height: 100%;
+}
+
+#filter-speciallities {
+  display: flex;
+}
+
+#filter-speciallities :first-child {
+  color: #38b9db;
+}
+
+#filter-speciallities li {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+#search-body {
+  background-color: #efeff4;
+}
+
+#search-body .row .col-md-6 .d-flex {
+  justify-content: space-around;
+  text-align: center;
+}
+
+#search-body .row .col-md-6 img {
+  border-radius: 50%;
+  width: 120px;
+  padding: 0.5em;
+  padding-bottom: 0.1em;
+}
+
+#search-body .row .col-md-6 h4 {
+  color: #38b9db;
+}
+
+#search-body .row .col-md-6 .icon span {
+  padding-left: 2px;
+}
+
+#search-body .row .col-md-6 .fees {
+  color: #38b9db;
+  font-size: 1.8em;
+}
+
+#search-body .row .col-md-6 .desc {
+  font-size: 0.8em;
+}
+
+#search-body .row .col-md-6 .btn {
+  width: 90%;
+  margin-left: 4%;
+  background-color: #30c34b;
+}
+
+.search-filter {
+  background-color: #fff;
+  border-radius: 0.5em;
+  padding: 1em 0;
+}
+
+.search-filter hr {
+  color: #bdbdc0;
+}
+
+.search-filter .filter-title > h2 {
+  text-transform: capitalize;
+  color: #38b9db;
+  font-size: 2em;
+  padding-left: 0.5em;
+}
+
+.search-filter .filter-body .firstRow {
+  padding: 0 0.8em;
+  margin-bottom: 20px;
+}
+
+.search-filter .filter-body .firstRow #gender {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-filter .filter-body .firstRow #gender select {
+  margin-top: 0.2em;
+}
+
+.search-filter .filter-body .firstRow .cont {
+  margin-top: 0.5em;
+}
+
+.search-filter .filter-body .firstRow .cont .input-checkbox {
+  height: 1.2em;
+  width: 1.2em;
+  border-radius: 2px;
+}
+
+.search-filter .filter-body .firstRow .cont img {
+  float: right;
+  color: #38b9db;
+  font-size: 1.2em;
+}
+
+.search-filter .filter-body .firstRow .flex-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-filter .filter-body .firstRow .flex-btn label {
+  margin-bottom: 0.5em;
+}
+
+.search-filter .filter-body .secoundRow {
+  padding: 0 0.8em;
+  margin-bottom: 20px;
+}
+
+.search-filter .filter-body .secoundRow #day {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-filter .filter-body .secoundRow #day select {
+  margin-top: 0.2em;
+}
+
+.search-title #h4 {
+  font-weight: 600;
+  color: #120f55;
+}

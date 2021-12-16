@@ -1,0 +1,151 @@
+.c1 {
+  background-color: #004f71;
+}
+
+#one {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 40px;
+  font-family: "FFShamelFamily-SansOneBold";
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+}
+
+.why-img {
+  float: right;
+  display: flex;
+  margin-top: 2%;
+  margin-left: 5%;
+  width: 90%;
+  margin-bottom: 18px;
+}
+
+.why-h4 {
+  font-family: "FFShamelFamily-SansOneBold";
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+.xb {
+  margin-top: -10%;
+  width: 70%;
+}
+
+@media (max-width: 991px) {
+  .xb {
+    display: none;
+  }
+}
+
+.wrapper {
+  padding-top: 50px;
+  color: #38b9db;
+  font-weight: bold;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.ca {
+  border-radius: 16px !important;
+  height: 550px;
+  border: none !important;
+  width: 90%;
+}
+
+.cb {
+  text-align: center;
+  box-shadow: 0 9px 30px 0 #bdbdbd;
+  border-radius: 16px;
+}
+
+.cb h6 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #38b9db;
+}
+
+.ctl {
+  text-transform: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #004f6c;
+}
+
+.ct {
+  font-size: 18px;
+  color: #0e0e0e;
+  margin: 10% 0%;
+}
+
+#get {
+  border-radius: 16px;
+  background-color: #38b9db;
+  margin: 10% 7% 5% 7%;
+}
+
+.get-content {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.get-h1 {
+  width: 100%;
+  height: auto;
+  font-family: FFShamelFamily-SansOneBold;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.get-h3 {
+  width: 100%;
+  /* height: 60px; */
+  font-family: FFShamelFamily-SansOne;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.app-download {
+  display: flex;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+}
+
+.appel {
+  margin-right: 10%;
+}
+
+@media (max-width: 992px) {
+  .download-img {
+    display: none;
+  }
+}
+
+@media (max-width: 555px) {
+  .app-download {
+    display: none !important;
+  }
+}

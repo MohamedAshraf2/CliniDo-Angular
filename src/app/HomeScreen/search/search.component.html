@@ -1,0 +1,142 @@
+<div class="container-fluid search_box">
+  <div class="row justify-content-center">
+      <div class="col-lg-2 col-md-2 col-sm-12 ">
+          <select style="background-color:#efeff4 ;" class="form-select form-select-lg mb-3"
+              aria-label=".form-select-lg" [value]="serchval" [(ngModel)]="filterItem">
+              <option value={{item.name}} name="drcategory" *ngFor="let item of specialities">{{item.name}}</option>
+          </select>
+
+      </div>
+
+      <div class="col-lg-2 col-md-2 col-sm-12">
+        <select style="background-color:#efeff4 ;" class="form-select form-select-lg mb-3" name="drCity"
+        aria-label=".form-select-lg"  (change)="onSelect(selectedCity.id)" [(ngModel)]="selectedCity.id">
+        <option>{{'Choose City'|translate}}</option>
+        <option *ngFor="let city of cities" [value]="city.id">{{city.name}}</option>
+    </select>
+
+
+      </div>
+
+      <div class="col-lg-2 col-md-2 col-sm-12">
+        <select style="background-color:#efeff4 ;" class="form-select form-select-lg mb-3" name="drArea"
+        aria-label=".form-select-lg ">
+        <option selected name="drArea" value="0"> {{'Choose Area'|translate}} </option>
+        <option  name="drArea"  [value]="area.id" *ngFor="let area of areas">{{area.name}}</option>
+      </select>
+
+
+      </div>
+
+      <div class="col-lg-5 col-md-5 col-sm-12">
+          <div class="row">
+              <div class="col-md-8 col-sm-12 col-xs-12 ">
+                  <div class="input-container "
+                      style="background-color: #efeff4; border-radius: 8px;height: 60px;">
+                      <i class="icon"><img style="margin:4%;"
+                              src="https://clinido.com/public/images/ic-type.svg"></i>
+                      <input class="input  doctor-name" type="text" placeholder="{{'Type doctor name'|translate}}"
+                          name="inputValue" #username  [(ngModel)]="filterItem">
+                  </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                  <button type="button" style="background-color: #30c34a; color: white;"
+                      class="btn w-100 h-100 fs-4 fw-bold bttn-search" (click)="clickme(username.value)">{{'Search'|translate}}</button>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div>
+
+
+<div id="search-body">
+  <div class="container p-2 ">
+      <div class="col-md-12">
+          <ul id="filter-speciallities">
+              <li>{{'Home page'|translate}} </li>
+              <li> / {{'all speciallities'|translate}}</li>
+          </ul>
+      </div>
+      <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <div class="search-filter">
+                  <div class="filter-title">
+                      <h2>{{'filter'|translate}}</h2>
+                  </div>
+                  <hr>
+                  <div class="filter-body">
+                      <div class="row firstRow">
+                          <label for="gender">{{'Type'|translate}}</label>
+                          <br>
+                          <div class="flex-gender-btn" id="gender">
+                              <select class="form-select" aria-label="Default select example">
+                                  <option selected>{{'please select gender'|translate}}</option>
+                                  <option value="All">{{'All'|translate}}</option>
+                                  <option value="Male">{{'Male'|translate}}</option>
+                                  <option value="Female">{{'Female'|translate}}</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="row secoundRow">
+                          <label for="day">{{'Availability'|translate}}</label>
+                          <br>
+                          <div class="flex-day-btn" id="day" data-toggle="buttons1">
+                              <select class="form-select" aria-label="Default select example">
+                                  <option selected>{{'please select day'|translate}}</option>
+                                  <option value="All">{{'All'|translate}}</option>
+                                  <option value="Today">{{'Today'|translate}}</option>
+                                  <option value="Tomorrow">{{'Tomorrow'|translate}}</option>
+                              </select>
+                          </div>
+                      </div>
+
+                      <div class="row firstRow">
+                          <div class="flex-btn">
+                              <label for="formControlRange">{{'Clinic fees'|translate}}</label>
+                              <input type="range" class="form-control-range" id="formControlRange" value="0">
+                          </div>
+                      </div>
+                      <div class="row firstRow">
+                          <label for="type">{{'Clinic features'|translate}}</label>
+                          <label class="cont" for="checkbox1">
+                              <input type="checkbox" id="checkbox1" class="input-checkbox ">
+                              {{'Elevator'|translate}}
+                              <img src="/src/assets/images/elavator.svg" alt="">
+                          </label>
+                          <label class="cont" for="checkbox2">
+                              <input type="checkbox" id="checkbox2" class="input-checkbox ">
+                              {{'Conditioner'|translate}}
+                              <img src="/src/assets/images/air-conditioner.svg" alt="">
+                          </label>
+                          <label class="cont" for="checkbox3">
+                              <input type="checkbox" id="checkbox3" class="input-checkbox ">
+                              {{'E-payment'|translate}}
+                              <img src="/src/assets/images/visa-pay.svg" alt="">
+                          </label>
+                          <label class="cont" for="checkbox4">
+                              <input type="checkbox" id="checkbox4" class="input-checkbox ">
+                              {{'TV'|translate}}
+                              <img src="/src/assets/images/tv.svg" alt="">
+                          </label>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              <div class="col-md-12 search-title">
+                  <h4 id="h4">{{'Book best doctor in Egypt'|translate}}</h4>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <app-card *ngFor="let item of doctors |filter:filterItem" [doctor]="item"></app-card>
+                  </div>
+                  <div class="col-md-6">
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+

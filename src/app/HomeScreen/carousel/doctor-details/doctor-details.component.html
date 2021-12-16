@@ -1,0 +1,252 @@
+
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////   -->
+  <section id="drProfileHeader" class="drProfileHeader">
+      <div class="container-fluid bookContainer">
+          <div class="row online">
+              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 card">
+                  <div class="d-flex">
+                  <div class="col-lg-1 col-md-2 col-sm-2 col-xs-2">
+                      <img class="img-circle prof-img"
+                          src="{{doctor.url}}">
+                      <a target="_blank" class="share_link" onclick="share(4791,890,'Dr.','Emad','Ismail')">
+                          <img src="https://clinido.com/public/images/btn-share.svg" class="share-img">
+                      </a>
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 doctorName">
+                      <div class="doc-nmsp">
+                          <h1>{{doctor.firstName}}</h1>
+                          <p class="title">{{doctor.drCategory}}</p>
+                      </div>
+                  </div>
+              </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 rate-box">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ngma">
+                          <p>5 </p>
+                          <img class="top_mini_images" src="https://clinido.com/public/images/ic-rate.svg">
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ngma">
+                          <p>7721 </p>
+                          <img src="https://clinido.com/public/images/ic-views.svg" style="width: 24px;">
+                      </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12-col-xs-12">
+                      <h2 class="clinics clinicdots">{{'Clinincs'|translate}}</h2>
+                      <!-- <div class="dots-container"></div> -->
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </section>
+  <section id="drProfile" class="drProfile">
+      <div class="container-fluid bookContainer">
+          <div class="row drDetails">
+              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 mobileCard" style="padding: 0;">
+                  <div class="card" style="width: 100%;">
+                      <div class="cardBody active" id="activeClinic">
+                          <div class="row doc-cd">
+                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 clinic-name doc-cd">
+                                  <h4>Clinic Dr {{doctor.firstName}}</h4>
+                              </div>
+                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 loc-box doc-cd">
+                                  <div class="img-loc">
+                                      <p class="text-loc">Heliopolis</p>
+                                      <p class="clin-loc">77 Othman Ebn Afan St. Masr ElGedida</p>
+                                  </div>
+                              </div>
+                              <div class="details doc-cd">
+                                  <div class="row">
+                                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                          <img src="https://clinido.com/public/images/ic-time.svg"
+                                              class="mini_images">
+                                          <p class="text">{{'Waiting'|translate}}</p>
+                                          <p class="value">15 {{'minutes'|translate}}</p>
+                                      </div>
+                                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                          <img src="https://clinido.com/public/images/ic-money.svg"
+                                              class="mini_images">
+                                          <p class="text">{{'Fees'|translate}}</p>
+                                          <p class="value">300 {{'EGP'|translate}}</p>
+                                      </div>
+                                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                          <img src="https://clinido.com/public/images/ic-call.svg"
+                                              class="mini_images">
+                                          <p class="text">{{'Call Us'|translate}}</p>
+                                          <p class="value"><a href="tel:00201201111344">01201111344</a></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <form class="global-nav doc-cd" action="https://clinido.com/en/saveappointmentdate"
+                                  accept-charset="UTF-8" method="post" id="saveappointment">
+                                  <input type="hidden" name="_token" value="">
+                                  <input type="hidden" name="cid" value="0">
+                                  <input type="hidden" name="clinic_id" value="890">
+                                  <input type="hidden" name="doctor-id" value="4791">
+                                  <input type="hidden" name="appointment_slot" value="(7:00 PM - 9:00 PM)">
+                                  <input type="hidden" name="appointment_date" value="2021-10-23">
+                                  <input type="hidden" name="availability_id" value="4206">
+                                  <p>{{'First In First Out'|translate}}</p>
+                                  <button type="submit" class="btn btn-nav btn-block"
+                                      onclick="window.location=''">{{'Book Tomorrow (7:00 PM - 9:00 PM)'|translate}}</button>
+                              </form>
+                              <div class="other-dates doc-cd">
+                                  <p class="checkDate choose_dates" data-cid="0" clinic_id="890" doctor-id="4791">{{'Show other available dates'|translate}}</p>
+                                  <i id="drop-img" class="fas fa-chevron-down" aria-hidden="true"></i>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 tabs-links">
+                  <div class="row">
+                      <div class="container-fluid">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tabs">
+                              <ul class="nav nav-tabs">
+                                  <li id="ShowClinInfo" class="active"><a (click)="ShowClinInfo()">{{'Clinic information'|translate}}</a></li>
+                                  <li id="ShowRatingReviews"><a (click)="ShowRatingReviews()">{{'Ratings and reviews'|translate}}</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div id="clinic-info" class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                  <div class="row aboutSection">
+                      <div class="container-fluid">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prf-abt about">
+                              <div class="abt-cnt">
+                                  <i class="fas fa-info centerInfoIcon" aria-hidden="true"></i>
+                                  <h4 class="center_info">{{'About doctor'|translate}} </h4>
+                                  <p>{{'Fellow of royal college of London'|translate}}</p>
+                              </div>
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prf-abt education">
+                              <div class="abt-cnt">
+                                  <i class="fas fa-graduation-cap centerInfoIcon" aria-hidden="true"></i>
+                                  <h4 class="center_info">{{'Education'|translate}}</h4>
+                                  <p>{{'زميل الكلية الملكية بلندن عضو الجمعية الأمريكية لأمراض السكر'|translate}}</p>
+                              </div>
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prf-abt clinic-features"
+                              id="clinic-features">
+                              <div class="abt-cnt">
+                                  <i class="fas fa-clinic-medical centerInfoIcon" aria-hidden="true"></i>
+                                  <h4 class="center_info">{{'Clinic features'|translate}}</h4>
+                                  <div>
+                                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <img src="https://clinido.com/public/images/tv.svg">
+                                          <p>{{'TV'|translate}}</p>
+                                      </div>
+                                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                          <img src="https://clinido.com/public/images/air-conditioner.svg">
+                                          <p>{{'Conditioner'|translate}}</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div id="ratingReviews" class="col-lg-9 col-md-9 col-sm-8 col-xs-12 ">
+                  <div class="row">
+                      <div class="container-fluid">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prf-abt">
+                              <div class="abt-cnt">
+                                  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                      <h4 class="general-rate">{{'General Rating'|translate}}</h4>
+                                      <div class="general-rating">
+                                          <span class="fas fa-star checked"></span>
+                                          <span class="fas fa-star checked"></span>
+                                          <span class="fas fa-star checked"></span>
+                                          <span class="fas fa-star checked"></span>
+                                          <span class="fas fa-star not-checked"></span>
+                                      </div>
+                                      <p class="rate-count">{{'(4.9) rated from 84 visitors'|translate}}</p>
+                                  </div>
+                                  <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                      <p class="title">{{'Medical service'|translate}}</p>
+                                      <p class="value">5</p>
+                                      <div class="progress">
+                                          <div class="progress-bar" role="progressbar" aria-valuenow="99.5238"
+                                              aria-valuemin="0" aria-valuemax="100" style="width:99.5238% ;"></div>
+                                      </div>
+                                      <p class="title">{{'Waiting Area'|translate}}</p>
+                                      <p class="value">4.9</p>
+                                      <div class="progress">
+                                          <div class="progress-bar" role="progressbar" aria-valuenow="97.858"
+                                              aria-valuemin="0" aria-valuemax="100" style="width:97.858% ;"></div>
+                                      </div>
+                                      <p class="title">{{'Assistant'|translate}}</p>
+                                      <p class="value">4.9</p>
+                                      <div class="progress">
+                                          <div class="progress-bar" role="progressbar" aria-valuenow="98.096"
+                                              aria-valuemin="0" aria-valuemax="100" style="width:98.096%;"></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prf-abt">
+                              <div class="abt-cnt">
+                                  <h4 class="pat-name">الخطيب صلاح محمد احمد</h4>
+                                  <p class="value">2021-10-16</p>
+                                  <div class="rating">
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                  </div>
+                                  <p></p>
+                              </div>
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prf-abt">
+                              <div class="abt-cnt">
+                                  <h4 class="pat-name">سامية نجيب رزق</h4>
+                                  <p class="value">2021-10-16</p>
+                                  <div class="rating">
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                  </div>
+                                  <p>كله تمام</p>
+                              </div>
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prf-abt">
+                              <div class="abt-cnt">
+                                  <h4 class="pat-name">روجينا محمد يوسف</h4>
+                                  <p class="value">2021-10-09</p>
+                                  <div class="rating">
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                  </div>
+                                  <p></p>
+                              </div>
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 prf-abt">
+                              <div class="abt-cnt">
+                                  <h4 class="pat-name">نوادر محمد احمد</h4>
+                                  <p class="value">2021-09-27</p>
+                                  <div class="rating">
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                      <span class="fas fa-star checked"></span>
+                                  </div>
+                                  <p></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+

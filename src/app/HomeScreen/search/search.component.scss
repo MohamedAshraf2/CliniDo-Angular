@@ -1,0 +1,141 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+$blue: #38b9db;
+$bgColor: #efeff4;
+$btnColor: #30c34b;
+$logoColor: #004f71;
+.search_box {
+  padding-top: 100px;
+
+  width: 100%;
+  background: $logoColor;
+  transition: top 1.3s;
+}
+.form-select {
+  //     background-color:#3f0e0e;
+  height: 60px;
+}
+.doctor-name {
+  border-radius: 8px;
+  padding-left: 2%;
+  background-color: #efeff4;
+  border: none;
+  width: 80%;
+  height: 100%;
+}
+
+#filter-speciallities {
+  display: flex;
+  :first-child {
+    color: $blue;
+  }
+  li {
+    font-weight: 700;
+    font-size: 1em;
+  }
+}
+#search-body {
+  background-color: $bgColor;
+
+  .row {
+    .col-md-6 {
+      .d-flex {
+        justify-content: space-around;
+        text-align: center;
+      }
+      img {
+        border-radius: 50%;
+        width: 120px;
+        padding: 0.5em;
+        padding-bottom: 0.1em;
+      }
+      h4 {
+        color: $blue;
+      }
+      .icon span {
+        padding-left: 2px;
+      }
+      .fees {
+        color: $blue;
+        font-size: 1.8em;
+      }
+      .desc {
+        font-size: 0.8em;
+      }
+      .btn {
+        width: 90%;
+        margin-left: 4%;
+        background-color: $btnColor;
+      }
+    }
+  }
+}
+.search-filter {
+  background-color: #fff;
+  border-radius: 0.5em;
+  padding: 1em 0;
+  hr {
+    color: #bdbdc0;
+  }
+  .filter-title > h2 {
+    text-transform: capitalize;
+    color: $blue;
+    font-size: 2em;
+    padding-left: 0.5em;
+  }
+  .filter-body {
+    .firstRow {
+      padding: 0 0.8em;
+      margin-bottom: 20px;
+      #gender {
+        display: flex;
+        justify-content: space-between;
+        select {
+          margin-top: 0.2em;
+        }
+      }
+
+      .cont {
+        margin-top: 0.5em;
+        .input-checkbox {
+          height: 1.2em;
+          width: 1.2em;
+          border-radius: 2px;
+        }
+        img {
+          float: right;
+          color: $blue;
+          font-size: 1.2em;
+        }
+      }
+      .flex-btn {
+        display: flex;
+        flex-direction: column;
+        label {
+          margin-bottom: 0.5em;
+        }
+      }
+    }
+    .secoundRow {
+      padding: 0 0.8em;
+      margin-bottom: 20px;
+      #day {
+        display: flex;
+        justify-content: space-between;
+        select {
+          margin-top: 0.2em;
+        }
+      }
+    }
+  }
+}
+.search-title {
+  #h4 {
+    font-weight: 600;
+    color: #120f55;
+  }
+}

@@ -1,0 +1,187 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+html[dir="rtl"] {
+  body {
+    font-family: "Segoe UI" !important;
+  }
+  @media (min-width: 576px) {
+    #clinic-info {
+      margin-right: auto;
+      // margin-left: 0 !important;
+    }
+    #ratingReviews {
+      margin-right: auto;
+      // margin-left: 0 !important;
+    }
+    #drProfile .card {
+      margin-top: -342px !important;
+    }
+    .drDetails {
+      #clinic-info {
+        // margin-right: 0 !important;
+        margin-top: 20px !important;
+      }
+      #ratingReviews {
+        // margin-right: 0 !important;
+        margin-top: 20px !important;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    #drProfileHeader {
+      height: 217px;
+    }
+    #drProfile .card {
+      margin-top: 18px !important;
+    }
+    .drDetails {
+      #clinic-info {
+        margin-top: -336px !important;
+        margin-right: 283px;
+      }
+      #ratingReviews {
+        margin-top: -336px !important;
+        margin-right: 283px;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    #drProfileHeader {
+      height: 220px;
+    }
+    .drDetails {
+      #clinic-info {
+        margin-right: 330px;
+      }
+      #ratingReviews {
+        margin-right: 330px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    #drProfileHeader {
+      height: 235px;
+    }
+    .drDetails {
+      #clinic-info {
+        margin-right: 403px;
+      }
+      #ratingReviews {
+        margin-right: 403px;
+      }
+    }
+  }
+  @media (min-width: 1336px) {
+    #drProfileHeader {
+      height: 242px;
+    }
+    #clinic-info {
+      padding-top: 20px;
+      margin-right: 428px;
+    }
+
+    #ratingReviews {
+      padding-top: 20px;
+      margin-right: 428px;
+    }
+  }
+  @media (min-width: 1440px) {
+    #drProfileHeader {
+      height: 248px;
+    }
+    #clinic-info {
+      margin-right: 471px !important;
+    }
+
+    #ratingReviews {
+      margin-right: 471px !important;
+    }
+  }
+  @media (min-width: 1600px) {
+    #drProfileHeader {
+      height: 263px;
+    }
+    #clinic-info {
+      margin-right: 509px !important;
+    }
+
+    #ratingReviews {
+      margin-right: 509px !important;
+    }
+  }
+  @media (min-width: 2560px) {
+    #drProfileHeader {
+      height: 316px;
+    }
+    #clinic-info {
+      margin-right: 850px !important;
+    }
+
+    #ratingReviews {
+      margin-right: 850px !important;
+    }
+  }
+
+  .carousel-control-prev {
+    display: none;
+  }
+  .carousel-control-next {
+    display: none;
+  }
+  // .drDetails {
+  //   #clinic-info {
+  //     margin-right: 480px;
+  //     margin-top: -314px !important;
+  //   }
+  //   #ratingReviews {
+  //     margin-right: 480px;
+  //     margin-top: -314px !important;
+  //   }
+  // }
+  #search-body {
+    h2 {
+      padding-right: 0.5em;
+    }
+  }
+  #areYouDoctor {
+    .content .title h1 {
+      text-align: right !important;
+    }
+  }
+  .c1 {
+    padding-right: 30px;
+    #one {
+      text-align: right;
+    }
+  }
+  .card {
+    padding: 10px 20px 10px 20px;
+  }
+  .wrapper {
+    margin-right: 70px;
+  }
+  .footer {
+    .mainHeader {
+      text-align: right !important;
+      padding-right: 79px;
+    }
+    .b4Last {
+      padding-right: 50px;
+    }
+    .last {
+      padding-right: 111px;
+    }
+  }
+}
+body {
+  background-color: #efeff4;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+}

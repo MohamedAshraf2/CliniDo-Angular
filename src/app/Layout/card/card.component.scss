@@ -1,0 +1,69 @@
+$blue: #38b9db;
+$bgColor: #efeff4;
+$btnColor: #30c34b;
+.card {
+  padding: 10px 20px 10px 20px;
+}
+.d-flex {
+  justify-content: space-around;
+  text-align: center;
+}
+
+img {
+  border-radius: 50%;
+  width: 120px;
+  padding: 0.5em;
+  padding-bottom: 0.1em;
+}
+h4 {
+  color: $blue;
+}
+
+.icon span {
+  padding-left: 2px;
+}
+
+.fees {
+  color: $blue;
+  font-size: 1.8em;
+}
+.desc {
+  font-size: 0.8em;
+}
+.btn {
+  width: 90%;
+  margin-left: 4%;
+  background-color: $btnColor;
+}
+.card-img-top {
+  width: 100px;
+  height: 100px;
+}
+
+// @media screen and (max-width: 450px){
+//   #carouselExampleIndicators{
+//       .carousel-inner{
+//           padding: 2em .5em !important;
+//       }
+//   }
+// }
+
+// @media screen and (max-width: 768px){
+//   #carouselExampleIndicators{
+//       .carousel-inner{
+//           padding: 2em;
+//       }
+
+//   }
+//   #carouselExampleIndicators>button {
+//       display: none;
+//   }
+// }
+
+// @media only screen and (min-width: 992px) {
+//   #carouselExampleIndicators{
+//       .carousel-inner{
+//           padding: 2.5em;
+//       }
+//   }
+// }

@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+}
+
+$blue: #38b9db;
+$bgColor: #efeff4;
+$btnColor: #30c34b;
+
+#carouselExampleIndicators {
+  background-color: $bgColor;
+  .carousel-inner {
+    padding: 3em;
+    .carousel-item .d-flex {
+      justify-content: space-evenly;
+      .cl1 {
+        width: 30%;
+      }
+    }
+  }
+
+  .carousel-control-prev {
+    justify-content: start;
+    width: 5%;
+  }
+  .carousel-control-next {
+    justify-content: end;
+    padding: 1px;
+    width: 5%;
+  }
+
+  .carousel-indicators button.active {
+    background-color: $blue;
+  }
+  .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2338B9DB' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2338B9DB' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  }
+}
+
+@media screen and (max-width: 700px){
+  #caro{
+
+         width: 100% !important;
+  }
+  .caro_cont{
+    flex-direction: column;
+  }
+}
+
+// @media screen and (max-width: 768px){
+//   #carouselExampleIndicators{
+//       .carousel-inner{
+//           padding: 2em;
+//       }
+
+//   }
+//   #carouselExampleIndicators>button {
+//       display: none;
+//   }
+// }
+
+// @media only screen and (min-width: 992px) {
+//   #carouselExampleIndicators{
+//       .carousel-inner{
+//           padding: 2.5em;
+//       }
+//   }
+// }

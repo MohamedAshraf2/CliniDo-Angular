@@ -1,0 +1,102 @@
+#areYouDoctor {
+  background-color: #efeff4;
+  padding-bottom: 1px;
+  padding-top: 5px;
+}
+
+#areYouDoctor .content {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#areYouDoctor .content .title h1 {
+  font-size: 30px;
+  text-align: left;
+  color: #004f6c;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: normal;
+  font-weight: 700;
+}
+
+#areYouDoctor .content .areYouDoctorForm {
+  margin-bottom: 100px;
+}
+
+#areYouDoctor .content .areYouDoctorForm .formRow {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#areYouDoctor .content .areYouDoctorForm .formRow .formCol {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#areYouDoctor .content .areYouDoctorForm .formRow .formCol .form-group {
+  margin-bottom: 15px;
+}
+
+#areYouDoctor .content .areYouDoctorForm .formRow .formCol .form-group label {
+  color: #4a4a4a;
+  margin-bottom: 10px;
+  font-size: 20px;
+  display: inline-block;
+  max-width: 100%;
+  font-weight: 700;
+}
+
+#areYouDoctor .content .areYouDoctorForm .formRow .formCol .form-group .formInputs {
+  height: 56px;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 100%;
+  font-size: 20px;
+  color: #4a4a4a;
+  padding: 10px 16px;
+  border: none;
+}
+
+#areYouDoctor .content .areYouDoctorForm .formRow .formCol .form-group .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#areYouDoctor .content .areYouDoctorForm .formRow .formCol .form-group .iti {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+#areYouDoctor .content .areYouDoctorForm .formRow .formCol .form-group .iti .iti__selected-flag {
+  padding: 6px;
+  border-right: solid 0.5px #979797;
+  background-color: #fff;
+}
+
+#areYouDoctor .content .areYouDoctorForm .formRow .formCol .form-group option {
+  text-indent: 15px;
+  background-color: #ffffff;
+  width: 50%;
+  border-color: #ffffff;
+}
+
+#areYouDoctor .content .areYouDoctorForm .formRow .formCol {
+  width: 100%;
+}
+
+#areYouDoctor .content .areYouDoctorForm .btn-lg {
+  padding: 15px 16px;
+  font-size: 25px;
+  background-color: #30c34b;
+  color: #fff;
+  display: block;
+  width: 100%;
+}
+/*# sourceMappingURL=doctor-form.component.css.map */

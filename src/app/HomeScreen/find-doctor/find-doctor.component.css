@@ -1,0 +1,79 @@
+#cont1 {
+  padding-top: 8%;
+}
+
+@media (max-width: 991px) {
+  #cont1 {
+    padding-top: 20%;
+  }
+}
+
+@media (max-width: 400px) {
+  #cont1 {
+    padding-top: 40%;
+  }
+}
+
+#row1 {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#CallUs {
+  background-color: #38b9db;
+  width: 120px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#hh1 {
+  color: #004f71;
+}
+
+#pp1 {
+  color: #004f71;
+}
+
+#calluscol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  #calluscol {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  #calluscol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#svgg {
+  margin-left: 40%;
+}
+
+#svgg {
+  margin-left: 40%;
+}
+
+.form-select {
+  height: 60px;
+}
+
+.doctor-name {
+  border-radius: 8px;
+  padding-left: 2%;
+  background-color: #efeff4;
+  border: none;
+  width: 80%;
+  height: 100%;
+}
+/*# sourceMappingURL=find-doctor.component.css.map */

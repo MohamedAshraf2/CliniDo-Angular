@@ -1,0 +1,22 @@
+#cont1 {
+  padding-top: 8%;
+}
+
+@media (max-width: 991px) {
+  #cont1 {
+    padding-top: 20%;
+  }
+}
+
+@media (max-width: 400px) {
+  #cont1 {
+    padding-top: 40%;
+  }
+}
+
+#row1 {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+/*# sourceMappingURL=app.component.css.map */

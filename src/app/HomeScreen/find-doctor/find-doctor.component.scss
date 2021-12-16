@@ -1,0 +1,90 @@
+$breakpoint-tablet: 991px;
+$breakpoint2-tablet: 767px;
+$button-Width: 100px;
+$logoColor: #004f71;
+$callUsColor: #38b9db;
+$margTop: 8%;
+// * {
+//   padding: 0;
+//   border: 0;
+//   box-sizing: border-box;
+//   outline: none;
+// }
+
+// body {
+//   background-color: #efeff4 !important;
+// }
+#cont1 {
+  padding-top: $margTop;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  #cont1 {
+    padding-top: 20%;
+  }
+}
+
+@media (max-width: 400px) {
+  #cont1 {
+    padding-top: 40%;
+  }
+}
+#row1 {
+  justify-content: space-evenly;
+}
+#CallUs {
+  background-color: $callUsColor;
+  width: 120px;
+  justify-content: center;
+}
+
+#hh1 {
+  color: $logoColor;
+}
+
+#pp1 {
+  color: $logoColor;
+}
+
+#calluscol {
+  display: flex;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  #calluscol {
+    display: block;
+  }
+}
+
+@media (max-width: $breakpoint2-tablet) {
+  #calluscol {
+    display: flex;
+  }
+}
+
+#svgg {
+  margin-left: 40%;
+}
+#svgg {
+  margin-left: 40%;
+}
+.form-select {
+  //     background-color:#3f0e0e;
+  height: 60px;
+}
+.doctor-name {
+  border-radius: 8px;
+  padding-left: 2%;
+  background-color: #efeff4;
+  border: none;
+  width: 80%;
+  height: 100%;
+}
+.feach {
+  border-bottom: $callUsColor 3px solid;
+  color: $callUsColor;
+  padding-bottom: 20px;
+  width: 17%;
+  margin-left: 70px;
+  margin-bottom: 0;
+}

@@ -1,0 +1,55 @@
+$bgColor: #EFEFF4;
+$btnColor:#30C34B;
+$blue:#38B9DB;
+
+#secOne{
+  background-color: $bgColor;
+  margin-top: 5%;
+  .card{
+    h5{
+      color: $blue;
+    }
+    span{
+      font-size: 12px;
+    }
+  }
+  .secDiv{
+    margin-right: 8%;
+    h1{
+      color: rgb(0,79,108);
+    }
+    input{
+      padding: 15px 10px;
+      padding-left: 15px;
+      margin-bottom: 10px;
+    }
+    label{
+      margin-bottom: 5px;
+    }
+    button{
+      width: 48.5%;
+      background-color: $btnColor;
+      border: none;
+    }
+  }
+}
+#model h5{
+  color: #004f6c;
+  text-align: center;
+  font-weight: 700;
+}
+#model .go-app{
+  display: flex;
+  img{
+    width: 100%;
+  }
+}
+.modal-content{
+  background-color: #fff;
+  padding: 10px;
+}
+#modelfooter{
+  button{
+    width: 100%;
+  }
+}

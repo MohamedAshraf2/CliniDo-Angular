@@ -1,0 +1,192 @@
+$paddingMargin: 15px;
+.footer {
+  padding: 10px 0;
+  font-size: 15px;
+  // font-family: "Markazi Text", serif;
+  padding-top: 35px;
+  background-color: #fff;
+
+  .content {
+    padding-right: 50px;
+    padding-left: 60px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .row1 {
+      margin-right: -$paddingMargin;
+      margin-left: -$paddingMargin;
+
+      .footerCol {
+        position: relative;
+        min-height: 1px;
+        padding-right: $paddingMargin;
+        padding-left: $paddingMargin;
+        width: 100%;
+      }
+
+      .mainHeader {
+        color: #000;
+        height: 28px;
+        // font-family: FFShamelFamily-SansOneBold;
+        font-size: 1.7rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        text-align: left;
+        outline: none;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        .arrow {
+          outline: none;
+          background-color: #fff;
+          border: none;
+          i {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      .mainHeaderBlue {
+        color: rgb(56, 185, 219);
+        height: 28px;
+        // font-family: FFShamelFamily-SansOneBold;
+        font-size: 1.7rem;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.4;
+        letter-spacing: normal;
+        text-align: left;
+        // color: #0e0e0e;
+        outline: none;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+
+      .clinicList li {
+        list-style-type: none;
+        list-style: none;
+        // font-family: FFShamelFamily-SansOne;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.36;
+        letter-spacing: normal;
+        text-align: left;
+        color: #0e0e0e;
+        margin-left: -5%;
+
+        a {
+          width: 160px;
+          /* height: 165px; */
+          // font-family: FFShamelFamily-SansOne;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 2.36;
+          letter-spacing: normal;
+          text-align: left;
+          color: #0e0e0e;
+          text-transform: capitalize;
+        }
+
+        a:hover {
+          background-color: #fff;
+        }
+      }
+
+      i {
+        display: inline-block;
+        margin-left: 0.255em;
+        border-right: 0.3em solid transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid transparent;
+      }
+
+      .dropdown-toggle::after {
+        display: none;
+      }
+    }
+  }
+}
+
+#footer {
+  background-color: #fff;
+  hr {
+    border: 1px solid #979797;
+    width: 99%;
+    margin: 0;
+  }
+
+  .content {
+    padding-right: $paddingMargin;
+    padding-left: $paddingMargin;
+    margin-right: auto;
+    margin-left: auto;
+
+    .social {
+      margin-right: -$paddingMargin;
+      margin-left: -$paddingMargin;
+      text-align: center;
+      // flex-direction: column;
+      align-items: center;
+
+      .socialIcons a {
+        color: #004f6c;
+        font-size: 30px;
+        padding: $paddingMargin;
+        width: fit-content;
+      }
+
+      .logo {
+        img {
+          width: 140px;
+          padding: 25px 0px 40px 15px;
+        }
+      }
+
+      .copyright {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 922px) {
+  #secOne {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  #secOne {
+    margin-bottom: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footerCol {
+    width: 25% !important;
+
+    .dropdown-toggle i {
+      display: none !important;
+    }
+  }
+
+  .clinicList li {
+    margin-left: -10% !important;
+  }
+
+  //#footer .social {
+  //   flex-direction: row !important;
+  //}
+
+  .social {
+    justify-content: space-between;
+  }
+}

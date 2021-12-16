@@ -1,0 +1,168 @@
+$logoColor: #004f71;
+$callUsColor: #38b9db;
+
+
+
+.imb{
+margin-bottom: -40%;
+width: 60%;
+
+}
+
+#hh{
+padding-left: 10%;
+
+color:$logoColor;
+font-weight:bold;
+  div{
+    div{
+      h4{
+        margin-top: 3%;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+#img-cont{
+ margin-left: 8%;
+}
+@media (max-width:767px) {
+  #img-cont{
+    display: none;
+  }
+}
+
+#fitcher{
+  border-bottom: $callUsColor  3px solid;
+  color: $callUsColor ;
+  padding-bottom: 10px;
+  width:15%;
+  margin-left: 8%;
+}
+
+@media (max-width:767px) {
+  #fitcher{
+    width:30%;
+  }
+}
+
+.x{
+  margin-top: 3%;
+  padding-left: 3%;
+}
+
+
+//////////////////////////////////////////////////////////////////@at-root
+
+
+
+$blue :#38B9DB;
+$bgColor : #EFEFF4;
+$btnColor : #30C34B;
+
+#carouselExampleIndicators{
+  background-color: $bgColor;
+  .carousel-inner{
+      padding: 3em;
+      .carousel-item .d-flex{
+          justify-content: space-evenly;
+          .cl1{
+            width: 30%;
+          }
+      }
+
+  }
+
+  .carousel-control-prev{
+      justify-content: start;
+  }
+ .carousel-control-next{
+     justify-content: end;
+     padding: 1px;
+ }
+
+
+
+  .carousel-indicators button.active {
+      background-color: $blue;
+  }
+  .carousel-indicators button {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+  }
+  .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2338B9DB' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+  }
+
+  .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2338B9DB' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  }
+}
+
+.a{
+  display: flex;
+
+}
+
+@media screen and (max-width: 700px){
+  .a{
+    display: block !important;
+  }
+}
+
+.but{
+  width: 70%;
+  margin-top: 1% ;
+  background-color: $logoColor;
+  color: #EFEFF4;
+}
+
+@media screen and (max-width: 767px){
+  .imo{
+    display: none;
+  }
+}
+// .imo{
+//   margin-left: 4%;
+
+// }
+
+.repeated-questions{
+border: white  3px solid;
+border-radius: 30px;
+// box-shadow: #004f71 10px;
+}
+
+.faq{
+  background-color: white;
+  width: 10%;
+  padding-left: 2%;
+  margin-top: 1%;
+  border-radius: 40px;
+}
+.ques{
+  margin-left: 3%;
+  margin-top: 3%;
+}
+// @media screen and (max-width: 768px){
+//   #carouselExampleIndicators{
+//       .carousel-inner{
+//           padding: 2em;
+//       }
+
+//   }
+//   #carouselExampleIndicators>button {
+//       display: none;
+//   }
+// }
+
+// @media only screen and (min-width: 992px) {
+//   #carouselExampleIndicators{
+//       .carousel-inner{
+//           padding: 2.5em;
+//       }
+//   }
+// }
+
