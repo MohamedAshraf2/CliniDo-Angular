@@ -8,6 +8,6 @@ export interface Booking{
   DoctorCategory?:DrCategory[],
   DoctorName?:string,
   DoctorPhone?:number,
-  resevationTime?:Date,
+  resevationTime?:String,
 
 }
