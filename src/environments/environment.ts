@@ -5,7 +5,7 @@
 import { getFirestore } from "firebase/firestore";
 
 export const environment = {
-  production: false,
+  production: true,
   firebaseConfig : {
     apiKey: "AIzaSyDxtLeqwR3AMlQYM6zk7Uz4e8_Dk0MZWoI",
     authDomain: "clinido-ce15d.firebaseapp.com",

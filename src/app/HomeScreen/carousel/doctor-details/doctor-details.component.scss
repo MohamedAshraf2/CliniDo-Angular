@@ -1,18 +1,5 @@
 $paddingMargin: 15px;
 
-// * {
-//     padding: 0;
-//     margin: 0;
-//     outline: none;
-//     box-sizing: border-box;
-
-// }
-// html[dir="rtl"] {
-//   #clinic-info {
-//     margin-right: 470px;
-//   }
-// }
-
 html {
   font-family: "Helvetica ", Arial, sans-serif;
   font-size: 15px;
@@ -51,7 +38,6 @@ html {
             margin-top: 2%;
           }
         }
-
         .doc-nmsp {
           h1 {
             height: 20px;
@@ -61,14 +47,12 @@ html {
             font-weight: bold;
             margin-top: 20px;
           }
-
           .title {
             height: 20px;
             font-family: FFShamelFamily-SansOneBold;
             font-size: 15px;
           }
         }
-
         .rate-box {
           padding: 3%;
           display: flex;
@@ -86,7 +70,6 @@ html {
         }
 
         .clinics {
-          // display: inline-block;
           color: #004f6c;
           font-size: 20px;
           font-weight: bold;
@@ -105,12 +88,9 @@ html {
     padding-left: 30px;
 
     .drDetails {
-      // margin-right: -15px;
-      // margin-left: -15px;
       justify-content: space-around;
 
       .mobileCard {
-        // width: 100%;
         .card {
           box-shadow: 0 4px 8px 0 #00000033;
           text-align: center;
@@ -241,7 +221,6 @@ html {
           margin: 10px;
           padding-bottom: 0px;
 
-          // margin-bottom: -25px;
           p {
             padding: 10px 0px 0px 5px;
             display: inline;
@@ -259,7 +238,6 @@ html {
 
       .tabs-links {
         width: 100%;
-        // height: 30%;
         cursor: pointer;
         z-index: 1;
 
@@ -281,7 +259,6 @@ html {
       }
 
       #clinic-info {
-        // margin-top: 10px;
         margin-bottom: 40px;
         width: 100%;
         margin-left: auto;
@@ -311,7 +288,6 @@ html {
       }
 
       #ratingReviews {
-        // margin-top: 10px;
         margin-bottom: 40px;
         width: 100%;
         margin-left: auto;
@@ -353,7 +329,6 @@ html {
 
         .value {
           float: right;
-          // display: inline-block;
           font-size: 12px;
         }
 
@@ -409,7 +384,6 @@ html {
 
     .card {
       margin-top: -337px;
-      // margin-bottom: 78px !important;
     }
 
     .tabs-links {
@@ -470,7 +444,6 @@ html {
     }
 
     .card {
-      // margin-top: 20px;
       margin-left: 0px;
       width: 100%;
       margin-top: 20px;
@@ -514,19 +487,8 @@ html {
   }
 }
 
-// @media (min-width: 819px) {
-//   #clinic-info {
-//     margin-top: -378;
-//   }
-
-//   #ratingReviews {
-//     margin-top: -378px;
-//   }
-// }
-
 @media (min-width: 992px) {
   #drProfileHeader {
-    // height: 160px;
     .bookContainer {
       margin-right: 87px;
       margin-left: 66px;
@@ -543,16 +505,6 @@ html {
     .tabs {
       margin-left: 24px;
     }
-
-    // #clinic-info {
-    //   margin-top: -375px;
-    //   margin-right: 36px;
-    // }
-
-    // #ratingReviews {
-    //   margin-top: -375px;
-    //   margin-right: 36px;
-    // }
   }
 }
 
@@ -612,12 +564,4 @@ html {
   #drProfile .card {
     margin-top: 30px;
   }
-
-  // #clinic-info {
-  //   margin-top: -353px !important;
-  // }
-
-  // #ratingReviews {
-  //   margin-top: -353px !important;
-  // }
 }
